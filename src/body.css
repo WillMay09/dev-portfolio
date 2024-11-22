@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+  --primary:#020617;
+  --secondary:#f8fafc;
+  --highlight:#D1A850;
+  --ff: 'Archivo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* --h6: 1.2rem/1.6 var(--ff);
+  /* text */
+  --h4: clamp(1.4rem, 1.6vw, 1.75rem)/1.6 var(--ff);
+  --h1-bold: bold clamp(2rem, 4vw, 3rem)/1.6 var(--ff);
+  --h1: clamp(2rem, 4vw, 3rem)/1.6 var(--ff);
+  --h6: clamp(1rem, 1.2vw, 1.3rem)/1.6 var(--ff);
+}
+.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    color: var(--secondary);
+
+}
+
+.rightContents, .leftContents{
+    width: 100%;
+}
+.leftContents{
+
+    display: flex;
+    justify-content: end;
+}
+.leftContents img{
+    
+    max-height: 50rem;
+    width: 100%;
+    border-radius: 15px;
+    border: var(--secondary);
+    border-width: 5px;
+
+
+}

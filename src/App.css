@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+  --primary:#020617;
+  --secondary:#f8fafc;
+  --highlight:#D1A850;
+}
+
+header{
+  padding-top:6.25rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  width: 100%;
+  background-color:var(--primary);
+}
+.body-components{
+
+  padding-right: 5rem;
+  padding-left: 5rem;
+  width: 100%;
+  background-color: var(--primary);
+ 
+}
+

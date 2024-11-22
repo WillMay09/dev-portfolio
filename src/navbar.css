@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+  --primary:#020617;
+  --secondary:#f8fafc;
+  --highlight:#D1A850;
+  --ff: 'Archivo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* --h6: 1.2rem/1.6 var(--ff);
+  /* text */
+  --h4: clamp(1.4rem, 1.6vw, 1.75rem)/1.6 var(--ff);
+  --h1-bold: bold clamp(2rem, 4vw, 3rem)/1.6 var(--ff);
+  --h1: clamp(2rem, 4vw, 3rem)/1.6 var(--ff);
+  --h6: clamp(1rem, 1.2vw, 1.3rem)/1.6 var(--ff);
+}
+
+.navbar{
+    width:100%;
+    background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--secondary);
+    border-radius: 15px;
+    height: 6.25rem;
+    font: var(--h6);
+
+}
+.buttonsNav{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    
+    color:var(--highlight);
+    
+
+}
+
+.buttonsNav button{
+
+    all: unset; /* Resets all styles */
+    /* Optionally, apply custom styles */
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+}
+.buttonsNav button:hover{
+
+    color:var(--secondary);
+    text-decoration: underline;
+}
